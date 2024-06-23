@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Leo\\source\\repos\\Hangman\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C103C96C-9480-43B2-BFCC-E67D249E71D3}|Hangman\\Hangman.csproj|c:\\users\\leo\\source\\repos\\hangman\\hangman\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C103C96C-9480-43B2-BFCC-E67D249E71D3}|Hangman\\Hangman.csproj|solutionrelative:hangman\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Leo\\source\\repos\\Hangman\\Hangman\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Hangman\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,7 +24,7 @@
               "RelativeDocumentMoniker": "Hangman\\Program.cs",
               "ToolTip": "C:\\Users\\Leo\\source\\repos\\Hangman\\Hangman\\Program.cs",
               "RelativeToolTip": "Hangman\\Program.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAswFcAAAAkAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAAAADUAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-22T14:56:46.332Z",
               "EditorCaption": ""

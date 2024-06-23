@@ -19,7 +19,8 @@
                 { "artistas", new string[] { "taylor swift", "john mayer", "billy joel", "elton john", "miley cyrus"} }
             };
 
-            Console.WriteLine("Em qual dificuldade deseja jogar?\nQuanto mais fácil, mais vidas!\n1-Fácil \n2-Médio \n3-Difícil \n");
+            //Seleção da dificudlade
+            Console.WriteLine("Digite um número para selecionar a dificuldade.\nQuanto mais fácil, mais vidas!\n1-Fácil \n2-Médio \n3-Difícil \n");
             dificuldade = int.Parse(Console.ReadLine());
             switch (dificuldade)
             {
@@ -39,6 +40,7 @@
             }
             Console.Clear();
             
+            //Seleção da categoria. Uma das palavras da categoria é escolhida aleatoriamente.
             Console.WriteLine("Em qual categoria deseja jogar? \nFilmes \nGatos \nArtistas \n");
             choosenCategory = Console.ReadLine().Trim().ToLower();
             choosenWords = categories[choosenCategory];
@@ -49,18 +51,26 @@
             List<char> charsGuesseds = new List<char>();
             isGuessing = true;
 
+            Console.Clear();
+
+            //Loop Principal do Jogo. Enquanto houver vidas e o jogador não tiver acertado, o jogo continua
             while(guessingsLeft > 0 && isGuessing)
             {
+                //Exibição da palavra em underlines e dos palpites errados já feitos, assim como das tentativas restantes.
                 Console.WriteLine($"Palavra: {string.Join("", hiddenWord)}");
-                Console.WriteLine($"Palpites restantes: {guessingsLeft}\nSeus palpites já foram: {string.Join(", ", charsGuesseds)}\n----------------------");
+                Console.WriteLine($"Palpites restantes: {guessingsLeft}");
+                Console.WriteLine($"Seus palpites já foram: {string.Join(", ", charsGuesseds)}");
+                Console.WriteLine("------------------");
                 Console.WriteLine("Entre uma letra: ");
                 char guess = char.ToLower(Console.ReadKey().KeyChar);
                 Console.WriteLine();
+                Thread.Sleep(100);
+
 
                 if (charsGuesseds.Contains(guess))
                 {
                     Console.WriteLine("Já chutou essa letra, tente outra!");
-                    Thread.Sleep(2000);
+                    Thread.Sleep(1500);
                     Console.Clear();
                     continue;
                 }
@@ -91,7 +101,7 @@
                 if (!hiddenWord.Contains('_'))
                 {
                     Console.WriteLine("Você venceu!\nA palavra era: " + choosenWord);
-                    Thread.Sleep(5000);
+                    Thread.Sleep(3000);
                     isGuessing = false;
                 }
                 else if (guessingsLeft == 0)
@@ -99,6 +109,7 @@
                     Console.WriteLine("Você Perdeu!\nA palavra secreta era" + choosenWord);
                     isGuessing = false;
                 }
+                Thread.Sleep(1000);
                 Console.Clear();
             }
         }
